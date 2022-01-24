@@ -1,0 +1,22 @@
+{% extends "cs480proj/base.html" %}
+
+{% block title %}Vaccine Repository{% endblock %}
+{% block subheader %}Information about Repository{% endblock %}
+
+{% block myContent %}
+
+<table>
+  <dl class="row">
+    {% for currVaccine in vaccines %}    
+      <dt class="col-sm-3">
+        {{currVaccine.name}}</dt>
+      <dd class="col-sm-9">
+        Total in Stock: {{currVaccine.dosesTotal}}, On Hold: {{currVaccine.dosesOnHold}}, Available: {{currVaccine.dosesAvailible}}
+      </dd>
+    {% endfor %}
+  </dl>
+</table>
+
+<a button type="button" class="btn btn-secondary btn-lg" href='/covid/admin-menu/updateRepository/'>Update Repository</button></a>
+
+{% endblock %}

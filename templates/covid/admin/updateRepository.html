@@ -1,0 +1,20 @@
+{% extends "cs480proj/base.html" %}
+
+{% block title %}Update Repository{% endblock %}
+{% block subheader %}Enter Name and Amount to Add or '-' to Subtract{% endblock %}
+
+{% block myContent %}
+
+
+
+<h4>Update Repository</h4>
+    <h4>{{message}}</h4>
+    <form action='/covid/admin-menu/updateRepository/' method="post">
+        {% csrf_token %}
+        
+        <input type="text"      name="vaccine"  placeholder="Moderna or Pfizer"><br>
+        <input type="text"      name="numVaccines"  placeholder="Enter Amount Amount"><br>
+        
+        <input type="submit"    value="Update">
+    </form>
+{% endblock %}

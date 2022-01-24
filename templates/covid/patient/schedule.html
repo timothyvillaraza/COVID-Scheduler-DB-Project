@@ -1,0 +1,21 @@
+{% extends "cs480proj/base.html" %}
+
+{% block title %}Schedule and Appointment{% endblock %}
+{% block subheader %}{% endblock %}
+
+{% block myContent %}
+
+    <h1>Make Appointment</h1>
+        <h2>{{message}}</h2>
+        <form action='/covid/patient-menu/schedule/' method="post">
+            {% csrf_token %}
+            
+            <input type="text"      name="timeSlot"  placeholder="Time Slot"><br>
+            <input type="text"      name="vaccination"  placeholder="Moderna or Pfizer"><br>
+            <input type="text"      name="date"  placeholder="MM/DD/YYYY"><br>
+
+            <input type="submit"    value="Schedule">
+        </form>
+    <b>{{error_message}}</b>
+
+{% endblock %}

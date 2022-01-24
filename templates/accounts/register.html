@@ -1,0 +1,36 @@
+{% extends "cs480proj/base.html" %}
+
+{% block myContent %}
+ <h1 class="mb-3">Patient Registration  </h1>
+    <form action='/accounts/register/' method="post">
+        {% csrf_token %}
+
+        {% comment %} User Account Information {% endcomment %}
+        <input type="text"      name="first_name"  placeholder="First Name"><br>
+        <input type="text"      name="middle_name"  placeholder="Middle Name"><br>
+        <input type="text"      name="last_name"   placeholder="Last Name"><br>
+        <input type="text"      name="username"    placeholder="User"><br>
+        <input type="email"     name="email"       placeholder="Email"><br>
+        <input type="password"  name="password1"   placeholder="Password"><br>
+        <input type="password"  name="password2"   placeholder="Confrim Password"><br>
+
+        <br>
+        Further Info <br>
+        {% comment %} Patient Account Information {% endcomment %}
+        <input type="text"      name="ssn"  placeholder="SSN"><br>
+        <input type="text"      name="gender"  placeholder="Gender"><br>
+        <input type="text"      name="age"  placeholder="Age"><br>
+        <input type="text"      name="race"  placeholder="Race"><br>
+        <input type="text"      name="occupation"  placeholder="Occupation"><br>
+        <input type="text"      name="address"  placeholder="Address"><br>
+        <input type="text"      name="phoneNum"  placeholder="Phone #"><br>
+        <input type="text"      name="medHistory"  placeholder="Medical History"><br>
+
+        <input type="submit"    value="Register">
+    </form>
+    <b>{{error_message}}</b>
+
+   
+    <h4 class="mb-3">Already Registered?</h4><a class="btn btn-primary" href='/accounts/login/' role="button">Click Here</a>
+{% endblock %}
+

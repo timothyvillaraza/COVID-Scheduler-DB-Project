@@ -1,0 +1,21 @@
+{% extends "cs480proj/base.html" %}
+
+{% block title %}Edit Information{% endblock %}
+{% block subheader %}{% endblock %}
+
+{% block myContent %}
+
+<h1>Update Info</h1>
+    <form action='/covid/patient-menu/editInfo/' method="post">
+        {% csrf_token %}
+        
+        <input type="text"      name="address"  placeholder="Chicago"><br>
+        <input type="text"      name="phoneNum"  placeholder="312-765-4637"><br>
+        
+
+        <input type="submit"    value="Update">
+    </form>
+    <b>{{error_message}}</b>
+
+
+{% endblock %}

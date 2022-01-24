@@ -1,0 +1,19 @@
+{% extends "cs480proj/base.html" %}
+
+{% block title %}Vaccination Record{% endblock %}
+{% block subheader %}{% endblock %}
+
+{% block myContent %}
+    {% comment %} Account Info List {% endcomment %}
+    <dl class="row">
+        {% for currRecord in records %}    
+            Record ID: {{currRecord.pk}},
+            Vaccine: {{currRecord.vaccine.name}},
+            Nurse First: {{currRecord.nurse.fname}},
+            Nurse Last: {{currRecord.nurse.lname}},
+            <br>
+            
+        {% endfor %}
+    </dl>
+
+{% endblock %}

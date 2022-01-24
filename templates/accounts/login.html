@@ -1,0 +1,17 @@
+{% extends "cs480proj/base.html" %}
+
+{% block title %} Login {{ user.username }} {% endblock %}
+{% block subheader %}{% endblock %}
+{% block myContent %}
+    <form action='/accounts/login/' method="post">
+        {% csrf_token %}
+        <input type="text"      name="username"   placeholder="Username"><br>
+        <input type="password"  name="password"   placeholder="Password"><br>
+        <input type="submit"    value="Login">
+    </form>
+    <b>{{error_message}}</b>
+
+    <br>
+    <h4 class="mb-3">Need an Account?</h4><a class="btn btn-primary" href='/accounts/register/' role="button">Click Here</a>
+
+{% endblock %}

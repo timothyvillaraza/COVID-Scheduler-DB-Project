@@ -1,0 +1,15 @@
+{% extends "cs480proj/base.html" %}
+
+<!-- Title -->
+{% block title %} DEBUG MENU {%endblock%}
+{% block subheader %} Create an Account {%endblock%}
+
+{% block myContent %}
+    <h2>{{confirmMessage|linebreaks}}</h2>
+    <form action='/covid/debug/' method="post">
+        {% csrf_token %}
+        <input type="submit"   name="createPatient"   value="Create Patient ">
+        <input type="submit"   name="createNurse" value="Create Nurse">
+    </form>
+
+{% endblock %}

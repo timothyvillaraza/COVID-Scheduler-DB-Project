@@ -1,0 +1,56 @@
+{% extends "cs480proj/base.html" %}
+
+{% block title %}Update Account Information{% endblock %}
+{% block subheader %}Your Account Information{% endblock %}
+
+{% block myContent %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        th,td{
+        border: 1px black solid;
+        }
+    </style>
+</head>
+<body>
+
+ <table>
+     <tr>
+         
+         <th>ID</th>
+         <th>Account</th>
+         <th>First_Name</th>
+         <th>Middle_Name</th>
+         <th>Last_Name</th>
+         <th>Age</th>
+         <th>Gender</th>
+         <th>Address</th>
+         <th>Phone_Number</th>
+        
+     </tr>
+    <tr>
+        
+        
+        <td>{{stu.id}}</td>
+        <td>{{stu.account}}</td>
+        <td>{{stu.fname}}</td>
+        <td>{{stu.mname}}</td>
+        <td>{{stu.lname}}</td>
+        <td>{{stu.age}}</td>
+        <td>{{stu.gender}}</td>
+        <td>{{stu.address}}</td>
+        <td>{{stu.phoneNum}}</td>
+
+    </tr>
+     
+</table>
+    <br>
+    <a button type="button" class="btn btn-secondary btn-lg" href='/covid/nurse-menu/update-info'>View/Update Account Information</button></a>
+
+
+</body>
+
+{% endblock %}

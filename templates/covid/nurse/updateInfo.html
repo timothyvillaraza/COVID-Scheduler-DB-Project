@@ -1,0 +1,22 @@
+{% extends "cs480proj/base.html" %}
+
+{% block title %}Update Account Information{% endblock %}
+{% block subheader %}Your Account Information{% endblock %}
+
+{% block myContent %}
+
+
+
+<h4>Update Info</h4>
+    <form action='/covid/nurse-menu/update-info/' method="post">
+        {% csrf_token %}
+        
+        <input type="text"      name="address"  placeholder="Chicago"><br>
+        <input type="text"      name="phoneNum"  placeholder="312-765-4637"><br>
+        
+
+        <input type="submit"    value="Update">
+    </form>
+    <b>{{error_message}}</b>
+
+{% endblock %}

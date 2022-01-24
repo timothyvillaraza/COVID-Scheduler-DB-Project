@@ -1,0 +1,28 @@
+{% extends "cs480proj/base.html" %}
+
+ {% if user.is_authenticated %} 
+    {% block title %} Welcome {{ user.username }} {% endblock %}
+
+    {% block subheader%}
+        {% if user.is_superuser %}
+            Admin Portal
+        {% elif user.is_nurse %}
+            Nurse Portal
+        {% elif user.is_patient %}
+            Patient Portal
+        {% endif %}
+    {% endblock %}
+
+{% endif %}
+
+
+{% block myContent %}
+    {% if user.is_admin %}
+        Admin Content
+    {% elif user.is_nurse %}
+        <a button type="button" class="btn btn-secondary btn-lg" href='/covid/nurse-menu/appointments'>Your Appointments</button></a>
+        <a button type="button" class="btn btn-secondary btn-lg" href='/covid/nurse-menu/time-slots'>Your Time Slots</button></a>
+    {% elif user.is_patient %}
+        Patient Content
+    {% endif %}
+{% endblock %}

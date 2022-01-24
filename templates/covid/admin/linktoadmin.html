@@ -1,0 +1,12 @@
+{% extends "cs480proj/base.html" %}
+
+{% block title %}Go to Admin Site{% endblock %}
+{% block subheader %}Click the link below in order to update nurse info, delete a nurse, view nurse and patient info{% endblock %}
+
+{% block myContent %}
+
+<button type="button">
+    <a href="{% url 'admin:index' %}">Click here!</a>
+</button>
+
+{% endblock %}

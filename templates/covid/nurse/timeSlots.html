@@ -1,0 +1,26 @@
+{% extends "cs480proj/base.html" %}
+
+<!-- Title -->
+{% block title %} Time Slot Manager {%endblock%}
+{% block subheader %} Your Open Slots {%endblock%}
+
+{% block myContent %}
+<h2>{{ confirmationMessage }}</h2>
+<form action='/covid/nurse-menu/time-slots/' method="post">
+    {% csrf_token %}
+    
+    <dl class="row">
+        <dt class="col-sm-3">Time Slot 1</dt>
+        <dd class="col-sm-9">
+            A description list is perfect for defining terms.
+            <input type="submit"   name="timeSlot1" value="Time Slot 1">
+        </dd>
+
+        <dt class="col-sm-3">Time Slot 2</dt>
+        <dd class="col-sm-9">
+            A description list is perfect for defining terms.
+            <input type="submit"   name="timeSlot2" value="Time Slot 2">
+        </dd>
+    </dl>
+</form>
+{% endblock %}

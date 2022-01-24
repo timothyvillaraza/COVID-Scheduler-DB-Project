@@ -1,0 +1,15 @@
+{% extends "cs480proj/base.html" %}
+
+{% block title %}Appointments{% endblock %}
+{% block subheader %}{% endblock %}
+
+{% block myContent %}
+    {% comment %} Account Info List {% endcomment %}
+    <dl class="row">
+        {% for currRow in appointmentRows %}    
+            {{ currRow.rowHTML|safe }}
+        {% endfor %}
+    </dl>
+    <a button type="button" class="btn btn-secondary btn-lg" href='/covid/patient-menu/schedule'>Schedule an Appointment</button></a>
+    <a button type="button" class="btn btn-secondary btn-lg" href='/covid/patient-menu/record'>Appointment Record</button></a>
+{% endblock %}

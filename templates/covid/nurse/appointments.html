@@ -1,0 +1,15 @@
+{% extends "cs480proj/base.html" %}
+
+{% block title %}Appointments{% endblock %}
+{% block subheader %}{% endblock %}
+
+<h3>{{message}}</h3>
+{% block myContent %}
+    {% comment %} Account Info List {% endcomment %}
+    <dl class="row">
+        {% for currRow in appointmentRows %}    
+            {{ currRow.rowHTML|safe }}
+        {% endfor %}
+    </dl>
+
+{% endblock %}
