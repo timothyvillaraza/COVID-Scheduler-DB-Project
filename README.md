@@ -1,17 +1,21 @@
 # COVID-Scheduler-DB-Project
 
-AUTHORS: 
+AUTHORS:
+
 	Timothy Villaraza
 	Kaylynn Arrington
 
 DESCRIPTION:
+
 	This is a web application for a simple covid vaccine scheduler.
 	
 	This is our first experience with creating a database backend let alone a full web application
 	Uses the Django (Python) web framework. We downloaded Postgresql to help us handle our local database.
 
 SETUP:
-	DATABASE: Postgre
+
+	DATABASE:
+		Postgre
 		- Download Postgre
 		- Download pgAdmin
 			- Create a new database
@@ -28,6 +32,6 @@ SETUP:
 			2. python manage.py migrate	      // Run the SQL queries on the database
 			3. python manage.py createsuperuser   // Creates a Super User to access the admin panel
 			4. python manage.py runserver	      // Runs the web application locally
-
-Note:
-  Time slots only exist when a nurse account joins one for the first time.
+			
+		Creating First Available Timeslot:
+			At least one nurse acconut must exist for time slots to be created.
