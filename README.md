@@ -11,6 +11,9 @@ DESCRIPTION:
 	
 	This is our first experience with creating a database backend let alone a full web application
 	Uses the Django (Python) web framework. We downloaded Postgresql to help us handle our local database.
+	
+![image](https://user-images.githubusercontent.com/61322637/174668907-770bc54e-f5d9-43ca-95cc-506f31e6a550.png)
+
 
 Features:
 	
