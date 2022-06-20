@@ -16,7 +16,7 @@ Features:
 	
 	- Covid Vaccine Inventory and Scheduling
 		- Supports multiple vaccines types
-		- Tracks vaccine inventory
+		- Tracks vaccine available and on hold inventory
 		- Scheduling interacts with all account levels
 		
 	- User account roles and role based web page access
