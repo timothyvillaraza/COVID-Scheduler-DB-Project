@@ -5,12 +5,13 @@ AUTHORS:
 	Kaylynn Arrington
 
 DESCRIPTION:
-	We used Django(Python) to create our web framework. We downloaded Postgresql to help us handle our database.
-
-	This is a web application for a simple covid vaccine scheduler. This is our first experience with creating a database backend let alone a full on web application
+	This is a web application for a simple covid vaccine scheduler.
 	
+	This is our first experience with creating a database backend let alone a full web application
+	Uses the Django (Python) web framework. We downloaded Postgresql to help us handle our local database.
+
 SETUP:
-	DATABSE: Postgre
+	DATABASE: Postgre
 		- Download Postgre
 		- Download pgAdmin
 			- Create a new database
@@ -19,13 +20,14 @@ SETUP:
 		- Change the proper settings to connect to your database
 	
 	Dependencies:
-		- pip install psycopg2                // Postgre library
+		- pip install psycopg2			      // Postgre library
 
-	Commands to start server:
-		- python manage.py makemigrations	  // Create SQL queries from Django's ORM
-		- python manage.py migrate			  // Run the SQL queries on the database
-		- python manage.py createsuperuser    // Creates a Super User to access the admin panel
-		- python manage.py runserver		  // Runs the web application locally
+	How to start the project:
+		Server Setup:
+			1. python manage.py makemigrations    // Create SQL queries from Django's ORM
+			2. python manage.py migrate	      // Run the SQL queries on the database
+			3. python manage.py createsuperuser   // Creates a Super User to access the admin panel
+			4. python manage.py runserver	      // Runs the web application locally
 
 Note:
-  No time slots only exist when a nurse account joins one for the first time.
+  Time slots only exist when a nurse account joins one for the first time.
