@@ -70,5 +70,5 @@ SETUP:
 
 Entitiy Relationship Diagram:
 
-	![CS 480 ERD](https://user-images.githubusercontent.com/61322637/174665511-91baff42-bd94-48a2-bc9e-48ca060c1b15.png)
+![CS 480 ERD](https://user-images.githubusercontent.com/61322637/174665511-91baff42-bd94-48a2-bc9e-48ca060c1b15.png)
 
