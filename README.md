@@ -33,12 +33,15 @@ Features:
 			- Register a patient account or sign in
 
 Admin Vaccine Inventory:
+
 ![image](https://user-images.githubusercontent.com/61322637/174668907-770bc54e-f5d9-43ca-95cc-506f31e6a550.png)
 
 Nurse Timeslot Manager:
+
 ![image](https://user-images.githubusercontent.com/61322637/174670198-56e96205-95e7-4512-833b-c005b794f150.png)
 
 Patient Scheduled Appointments:
+
 ![image](https://user-images.githubusercontent.com/61322637/174669127-fd13de56-f762-4e7e-97bc-a650c3b66063.png)
 
 SETUP:
