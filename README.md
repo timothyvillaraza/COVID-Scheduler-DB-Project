@@ -1,4 +1,4 @@
-# COVID-Scheduler-DB-Project
+# COVID-Vaccine-Scheduler-DB-Project
 
 AUTHORS:
 
